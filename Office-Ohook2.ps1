@@ -3,7 +3,7 @@ $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIden
 
 if (-not $isAdmin) {
     # Перезапуск скрипта с правами администратора
-    $scriptUrl = ""
+    $scriptUrl = "https://raw.githubusercontent.com/Qwsewdg234/Active-Win-Office/refs/heads/main/Office-Ohook2.ps1"
     $encodedScript = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes(
         "iex (irm '$scriptUrl')"
     ))
